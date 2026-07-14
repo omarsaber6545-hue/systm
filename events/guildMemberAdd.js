@@ -1,8 +1,9 @@
 const { EmbedBuilder, AttachmentBuilder, AuditLogEvent } = require('discord.js');
 const Canvas = require('canvas');
 const path = require('path');
-Canvas.registerFont(path.join(__dirname, '..', 'fonts', 'IBMPlexSansArabic-Bold.ttf'), { family: 'CustomFont' });
-const db = require('../database/db');
+Canvas.registerFont(path.join(__dirname, '..', 'font.ttf'), {
+    family: 'CustomFont'
+});const db = require('../database/db');
 const { sendLog } = require('../utils/logger');
 
 module.exports = {
