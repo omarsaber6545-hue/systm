@@ -1,0 +1,10 @@
+.env.*
+!.env.schema.json
+node_modules/
+database/*.db
+database/*.db-wal
+database/*.db-shm
+*.log
+npm-debug.log*
+.DS_Store
+enzo.txt
